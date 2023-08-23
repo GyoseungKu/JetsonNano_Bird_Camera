@@ -192,6 +192,20 @@ Eurasian Jay
 Tree sparrow
 Chickadees
 ```
+(Before running image labeling, copy all 400 bird images downloaded in Step 5 to the 'Yolo_mark/x64/Release/data/img' folder. Delete the image that was contained in the existing 'img' folder.)
+```bash
+cd ../../../
+./linux_mark.sh
+```
+Use the mouse to display only the bird area as shown in the picture below.
+
+<img src = "/img/label.png" width="300" height="300">
+
+Copy the following four files from the path of 'Yolo_mark/x64/Release/data' to the path of 'darknet/data'.
+1. 'img' folder
+2. obj.data
+3. obj.names
+4. train.txt
 
 ## 7. Learning Bird Image
 
