@@ -57,8 +57,36 @@ sudo chmod 755 ./OpenCV-4-5-4.sh
 ## 4. Clone Darknet
 
 ### 4-1. Ubuntu PC
+```bash
+git clone https://github.com/AlexeyAB/darknet.git
+
+cd darknet
+sudo vim Makefile
+```
+
+Change the top part as shown below.
+```bash
+GPU=1
+CUDNN=1
+CUDNN_HALF=0
+OPENCV=1
+```
 
 ### 4-2. Jetson Nano
+```bash
+git clone https://github.com/AlexeyAB/darknet.git
+
+cd darknet
+sudo vim Makefile
+```
+
+Change the top part as shown below.
+```bash
+GPU=1
+CUDNN=1
+CUDNN_HALF=0
+OPENCV=1
+```
 
 ## 5. Download Bird Image
 Download the image to the desired directory. (Copy to the Image Labeling folder later)
