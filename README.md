@@ -2,6 +2,8 @@
 Real-time artificial intelligence algae classification system based on Jetson Nano
 
 ## 1. Items Needed to Build an AI Camera
+![image](https://onedrive.live.com/embed?resid=CF077F8837ACCF%21111718&authkey=%21AJN17fh-seZ3H-I&width=1345&height=1793)
+
 1. Ubuntu PC with Nvidia GPU
 2. Jetson Nano (Recommend 4GB Model)
 3. USB Camera or Raspberry Pi Camera v2
@@ -164,6 +166,7 @@ This file contains a total of 400 images of eight species, 50 for each bird spec
 ## 6. Image Labeling
 
 ## 7. Learning Bird Image
+
 
 ### 7-1. Setting up Darknet
 
