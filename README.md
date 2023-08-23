@@ -1,4 +1,4 @@
-# JetsonNano_Bird_Camera
+# Jetson Nano Bird Camera
 Real-time artificial intelligence algae classification system based on Jetson Nano
 
 ## 1. Items Needed to Build an AI Camera
@@ -126,9 +126,8 @@ git clone https://github.com/AlexeyAB/darknet.git
 
 cd darknet
 sudo vim Makefile
-```
+
 Change the top part as shown below.
-```bash
 GPU=1
 CUDNN=1
 CUDNN_HALF=0
@@ -144,9 +143,8 @@ git clone https://github.com/AlexeyAB/darknet.git
 
 cd darknet
 sudo vim Makefile
-```
-Change the top part as shown below.
-```bash
+
+#Change the top part as shown below.
 GPU=1
 CUDNN=1
 CUDNN_HALF=0
@@ -164,9 +162,38 @@ This file contains a total of 400 images of eight species, 50 for each bird spec
 * Download Link: https://1drv.ms/f/s!As-sN4h_B88AhuVLb_R7KtjFNvIFNg?e=p7IoaZ
 
 ## 6. Image Labeling
+(Inside the Darknet folder)
+```bash
+git clone https://github.com/AlexeyAB/Yolo_mark
+cd Yolo_mark
+
+cmake .
+make
+chmod u+x ./linux_mark.sh 
+```
+```bash
+cd Yolo_mark/x64/Release/data
+vim obj.data
+
+#Change the top part as shown below.
+classes= 1
+....
+```
+```bash
+vim obj.names
+
+#Change the top part as shown below.
+Crow
+Azure-winged magpie
+Brown-eared bulbul
+Magpie
+Pigeon
+Eurasian Jay
+Tree sparrow
+Chickadees
+```
 
 ## 7. Learning Bird Image
-
 
 ### 7-1. Setting up Darknet
 
