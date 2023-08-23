@@ -154,14 +154,14 @@ OPENCV=1
 make
 ```
 
-## 5. Download Bird Image
+## 5. Download Bird Image (PC)
 Download the image to the desired directory. (Copy to the Image Labeling folder later)
 
 This file contains a total of 400 images of eight species, 50 for each bird species.
 
 * Download Link: https://1drv.ms/f/s!As-sN4h_B88AhuVLb_R7KtjFNvIFNg?e=p7IoaZ
 
-## 6. Image Labeling
+## 6. Image Labeling (PC)
 (Inside the Darknet folder)
 ```bash
 git clone https://github.com/AlexeyAB/Yolo_mark
@@ -207,7 +207,7 @@ Copy the following four files from the path of 'Yolo_mark/x64/Release/data' to t
 3. obj.names
 4. train.txt
 
-## 7. Learning Bird Image
+## 7. Learning Bird Image (PC)
 
 ### 7-1. Setting up Darknet
 ```bash
@@ -237,7 +237,7 @@ vim train.txt
 wget https://pjreddie.com/media/files/darknet53.conv.74
 ./darknet detector train data/obj.data cfg/yolov3-tiny.cfg darknet53.conv.74 -gpu 0 
 ```
-The graph below appears when the learning begins. The graph in the picture is the graph after the learning is completed.
+The graph below appears when the learning begins. The graph in the picture is the graph after the learning is completed. The graph converging to zero is normal.
 
 <img src = "/img/chart_yolov3-tiny.png" width="300" height="300">
 
