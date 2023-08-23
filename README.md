@@ -8,15 +8,14 @@ Real-time artificial intelligence algae classification system based on Jetson Na
    
    etc...
 
-## 2. Install CUDA and CUDNN
-Install CUDA and CUDNN for learning using GPU.
+## 2. Install CUDA and cuDNN
+Install CUDA andcuUDNN for learning using GPU.
 
 ### 2-1. Ubuntu PC
 ```bash
 sudo apt-get update
 sudo apt install -y ubuntu-drivers-common
 ```
-
 ```bash
 lspci | grep -i nvidia
 uname -m && cat /etc/*release
@@ -41,11 +40,42 @@ Install Cuda Toolkit
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
-
 sudo sh cuda_11.8.0_520.61.05_linux.run
+
+sudo vim ~/.bashrc
+```
+Add two lines at the bottom.
+```bash
+export PATH="/usr/local/cuda/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+```
+```bash
+source ~/.bashrc
+nvcc -V #Check
+```
+Install cuDNN
+* Link: https://developer.nvidia.com/rdp/cudnn-archive
+* Download CUDA 11.x 'Local Installer for Linux x86_64 (Tar)'
+```bash
+tar -xvf cudnn-linux-x86_64-8.8.1.3_cuda11-archive.tar.xz
+
+sudo cp cudnn-linux-x86_64-8.8.1.3_cuda11-archive/include/cudnn*.h /usr/local/cuda/include
+sudo cp cudnn-linux-x86_64-8.8.1.3_cuda11-archive/lib/libcudnn* /usr/local/cuda/lib64
+sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
+
+cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2 #Check
 ```
 
 ### 2-2. Jetson Nano
+If you are using Jetpack, no additional installation is required.
+```bash
+sudo vim ~/.bashrc
+```
+Add two lines at the bottom.
+```bash
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}$ 
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
 
 ## 3. Install OpenCV
 
@@ -95,13 +125,15 @@ git clone https://github.com/AlexeyAB/darknet.git
 cd darknet
 sudo vim Makefile
 ```
-
 Change the top part as shown below.
 ```bash
 GPU=1
 CUDNN=1
 CUDNN_HALF=0
 OPENCV=1
+```
+```bash
+make
 ```
 
 ### 4-2. Jetson Nano
@@ -111,13 +143,15 @@ git clone https://github.com/AlexeyAB/darknet.git
 cd darknet
 sudo vim Makefile
 ```
-
 Change the top part as shown below.
 ```bash
 GPU=1
 CUDNN=1
 CUDNN_HALF=0
 OPENCV=1
+```
+```bash
+make
 ```
 
 ## 5. Download Bird Image
