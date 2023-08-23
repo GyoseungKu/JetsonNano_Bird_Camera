@@ -199,7 +199,7 @@ cd ../../../
 ```
 Use the mouse to display only the bird area as shown in the picture below.
 
-<img src = "/img/label.png" width="300" height="300">
+<img src = "/img/label.png" width="480" height="240">
 
 Copy the following four files from the path of 'Yolo_mark/x64/Release/data' to the path of 'darknet/data'.
 1. 'img' folder
