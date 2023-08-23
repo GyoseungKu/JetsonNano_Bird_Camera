@@ -12,6 +12,38 @@ Real-time artificial intelligence algae classification system based on Jetson Na
 Install CUDA and CUDNN for learning using GPU.
 
 ### 2-1. Ubuntu PC
+```bash
+sudo apt-get update
+sudo apt install -y ubuntu-drivers-common
+```
+
+```bash
+lspci | grep -i nvidia
+uname -m && cat /etc/*release
+gcc --version
+
+sudo apt update
+sudo apt install build-essential
+
+uname -r
+sudo apt-get install linux-headers-$(uname -r)
+
+sudo lshw -numeric -C display
+sudo ubuntu-drivers devices
+
+sudo apt install nvidia-driver-525 #or Another version
+sudo reboot
+
+nvidia-smi #Check
+```
+Install Cuda Toolkit 
+* Link: https://developer.nvidia.com/cuda-toolkit-archive
+
+```bash
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+
+sudo sh cuda_11.8.0_520.61.05_linux.run
+```
 
 ### 2-2. Jetson Nano
 
