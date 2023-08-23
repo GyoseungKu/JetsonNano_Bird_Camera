@@ -12,6 +12,12 @@ Real-time artificial intelligence algae classification system based on Jetson Na
 Install CUDA and CUDNN for learning using GPU.
 
 ### 2-1. Ubuntu PC
+
+### 2-2. Jetson Nano
+
+## 3. Install OpenCV
+
+### 3-1. Ubuntu PC
 ```bash
 sudo apt install build-essential cmake git pkg-config libgtk-3-dev \
     libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
@@ -38,7 +44,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 make -j8
 ```
 
-### 2-2. Jetson Nano
+### 3-2. Jetson Nano
 It takes a very long time.
 
 ```bash
@@ -47,11 +53,6 @@ sudo chmod 755 ./OpenCV-4-5-4.sh
 ./OpenCV-4-5-4.sh
 ```
 
-## 3. Install OpenCV
-
-### 3-1. Ubuntu PC
-
-### 3-2. Jetson Nano
 
 ## 4. Clone Darknet
 
