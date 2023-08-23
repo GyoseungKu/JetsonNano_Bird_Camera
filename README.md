@@ -233,6 +233,8 @@ vim train.txt
 #Enter the command below in Vim.
 :%s/x64\/Release\///i
 ```
+
+### 7-2. Learning
 ```bash
 wget https://pjreddie.com/media/files/darknet53.conv.74
 ./darknet detector train data/obj.data cfg/yolov3-tiny.cfg darknet53.conv.74 -gpu 0 
@@ -241,9 +243,18 @@ The graph below appears when the learning begins. The graph in the picture is th
 
 <img src = "/img/chart_yolov3-tiny.png" width="300" height="300">
 
-### 7-2. Learning
-
 ### 7-3. Test
+```bash
+./darknet detector test data/obj.data cfg/yolov3-tiny.cfg backup/yolov3-tiny_10000.cfg  test1.jpg
+```
+| ![Before](/img/test1.jpg) Before |  ![After](/img/test1-1.jpg) After |
+|---|---|
+
+```bash
+./darknet detector test data/obj.data cfg/yolov3-tiny.cfg backup/yolov3-tiny_10000.cfg  test2.jpg
+```
+| ![Before](/img/test2.jpg) Before |  ![After](/img/test2-1.jpg) After |
+|---|---|
 
 ## 8. Copy to Jetson Nano
 
