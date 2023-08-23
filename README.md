@@ -9,7 +9,7 @@ Real-time artificial intelligence algae classification system based on Jetson Na
    etc...
 
 ## 2. Install CUDA and cuDNN
-Install CUDA and cuUDNN for learning using GPU.
+Install CUDA and cuDNN for learning using GPU.
 
 ### 2-1. Ubuntu PC
 ```bash
