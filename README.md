@@ -2,8 +2,14 @@
 Real-time artificial intelligence algae classification system based on Jetson Nano
 
 ## 1. Items Needed to Build an AI Camera
+1. Ubuntu PC with Nvidia GPU
+2. Jetson Nano (Recommend 4GB Model)
+3. USB Camera or Raspberry Pi Camera v2
+   
+   etc...
 
 ## 2. Install CUDA and CUDNN
+Install CUDA and CUDNN for learning using GPU.
 
 ### 2-1. Ubuntu PC
 
