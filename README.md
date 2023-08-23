@@ -2,7 +2,7 @@
 Real-time artificial intelligence algae classification system based on Jetson Nano
 
 ## 1. Items Needed to Build an AI Camera
-![image](https://onedrive.live.com/embed?resid=CF077F8837ACCF%21111718&authkey=%21AJN17fh-seZ3H-I&width=1345&height=1793)
+![title](/img/JetsonNano+Camera.jpg){: width="100" height="100"}
 
 1. Ubuntu PC with Nvidia GPU
 2. Jetson Nano (Recommend 4GB Model)
