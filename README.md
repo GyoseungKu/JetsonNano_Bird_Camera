@@ -22,6 +22,11 @@ Real-time artificial intelligence algae classification system based on Jetson Na
 ### 4-2. Jetson Nano
 
 ## 5. Download Bird Image
+Download the image to the desired directory. (Copy to the Image Labeling folder later)
+
+This file contains a total of 400 images of eight species, 50 for each bird species.
+
+* Download Link: https://1drv.ms/f/s!As-sN4h_B88AhuVLb_R7KtjFNvIFNg?e=p7IoaZ
 
 ## 6. Image Labeling
 
