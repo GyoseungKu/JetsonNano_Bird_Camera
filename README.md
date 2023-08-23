@@ -210,6 +210,36 @@ Copy the following four files from the path of 'Yolo_mark/x64/Release/data' to t
 ## 7. Learning Bird Image
 
 ### 7-1. Setting up Darknet
+```bash
+cd darknet/cfg
+vim yolov3-tiny.cfg
+
+#Change the top part as shown below.
+max_batches=16200
+steps=12960, 14580
+...
+[convolutional]
+filters=39
+....
+[yolo]
+classes=8
+....
+```
+```bash
+cd ../
+cd data
+vim train.txt
+
+#Enter the command below in Vim.
+:%s/x64\/Release\///i
+```
+```bash
+wget https://pjreddie.com/media/files/darknet53.conv.74
+./darknet detector train data/obj.data cfg/yolov3-tiny.cfg darknet53.conv.74 -gpu 0 
+```
+The graph below appears when the learning begins. The graph in the picture is the graph after the learning is completed.
+
+<img src = "/img/chart_yolov3-tiny.png" width="300" height="300">
 
 ### 7-2. Learning
 
