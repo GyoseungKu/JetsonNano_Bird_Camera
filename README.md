@@ -233,6 +233,7 @@ vim train.txt
 #Enter the command below in Vim.
 :%s/x64\/Release\///i
 ```
+The cfg file can be downloaded from '[Here](https://github.com/GyoseungKu/JetsonNano_Bird_Camera/blob/main/yolov3-tiny.cfg)'.
 
 ### 7-2. Learning
 ```bash
@@ -242,6 +243,8 @@ wget https://pjreddie.com/media/files/darknet53.conv.74
 The graph below appears when the learning begins. The graph in the picture is the graph after the learning is completed. The graph converging to zero is normal.
 
 <img src = "/img/chart_yolov3-tiny.png" width="300" height="300">
+
+* weights File Download Link: [https://1drv.ms/f/s!As-sN4h_B88AhuVLb_R7KtjFNvIFNg?e=p7IoaZ](https://1drv.ms/u/s!As-sN4h_B88AhuhoImWkjdzuH-arlA?e=xrgy30)
 
 ### 7-3. Test
 ```bash
