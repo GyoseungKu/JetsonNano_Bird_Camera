@@ -275,7 +275,7 @@ You can connect the IMX219 camera as shown in the picture below.
 
 Run 'Cheese' to verify that the camera is operating normally.
 
-<img src = "/img/cheese.png" width="480" height="240">
+<img src = "/img/cheese.jpg" width="480" height="240">
 
 ### 8-3. Real-time Test
 Run real-time recognition by entering the code below.
