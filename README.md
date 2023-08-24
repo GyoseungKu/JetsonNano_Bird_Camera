@@ -262,7 +262,28 @@ The graph below appears when the learning begins. The graph in the picture is th
 ## 8. Copy to Jetson Nano
 
 ### 8-1. Test
+Copy the files below from Ubuntu PC to Jetson.
+1. yolov3-tiny.cfg (to 'cfg' folder)
+2. yolov3-tiny_10000.weights (to 'backup' folder)
+3. 'data' folder
 
 ### 8-2. Connect Camera
+Connect the USB camera as shown in the picture below.
+
+<img src = "/img/connect_USB.jpg" width="480" height="240">
+
+You can connect the IMX219 camera as shown in the picture below.
+
+<img src = "/img/connect_CSI.jpg" width="480" height="240">
+
+Run 'Cheese' to verify that the camera is operating normally.
+
+<img src = "/img/cheese.png" width="480" height="240">
 
 ### 8-3. Real-time Test
+Run real-time recognition by entering the code below.
+```bash
+
+```
+
+You can check the execution through the YouTube link below.
