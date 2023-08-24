@@ -45,9 +45,8 @@ wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/
 sudo sh cuda_11.8.0_520.61.05_linux.run
 
 sudo vim ~/.bashrc
-```
-Add two lines at the bottom.
-```bash
+
+#Add two lines at the bottom.
 export PATH="/usr/local/cuda/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 ```
@@ -72,9 +71,8 @@ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2 #Check
 If you are using Jetpack, no additional installation is required.
 ```bash
 sudo vim ~/.bashrc
-```
-Add two lines at the bottom.
-```bash
+
+#Add two lines at the bottom.
 export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}$ 
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
