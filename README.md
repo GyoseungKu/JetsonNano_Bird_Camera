@@ -168,13 +168,12 @@ cd Yolo_mark
 cmake .
 make
 chmod u+x ./linux_mark.sh 
-```
-```bash
+
 cd Yolo_mark/x64/Release/data
 vim obj.data
 
 #Change the top part as shown below.
-classes= 1
+classes= 8
 ....
 ```
 ```bash
