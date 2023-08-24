@@ -282,5 +282,8 @@ Run real-time recognition by entering the code below.
 ```bash
 ./darknet detector demo data/obj.data cfg/yolov3-tiny.cfg backup/yolov3-tiny_10000.weights
 ```
-
 You can check the execution through the YouTube link below.
+
+[![이미지 텍스트](https://github.com/GyoseungKu/JetsonNano_Bird_Camera/blob/main/img/cover.jpg)](https://youtu.be/Yp-QZCFcC_k)
+
+Link: https://youtu.be/Yp-QZCFcC_k?si=vAJ0IMcmHHuwGvK0
