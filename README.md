@@ -246,13 +246,13 @@ The graph below appears when the learning begins. The graph in the picture is th
 
 ### 7-3. Test
 ```bash
-./darknet detector test data/obj.data cfg/yolov3-tiny.cfg backup/yolov3-tiny_10000.cfg  test1.jpg
+./darknet detector test data/obj.data cfg/yolov3-tiny.cfg backup/yolov3-tiny_10000.weights test1.jpg
 ```
 | ![Before](/img/test1.jpg) <br/>Before |  ![After](/img/test1-1.jpg) <br/>After |
 |---|---|
 
 ```bash
-./darknet detector test data/obj.data cfg/yolov3-tiny.cfg backup/yolov3-tiny_10000.cfg  test2.jpg
+./darknet detector test data/obj.data cfg/yolov3-tiny.cfg backup/yolov3-tiny_10000.weights test2.jpg
 ```
 | ![Before](/img/test2.jpg) <br/>Before |  ![After](/img/test2-1.jpg) <br/>After |
 |---|---|
@@ -281,7 +281,7 @@ Run 'Cheese' to verify that the camera is operating normally.
 ### 8-3. Real-time Test
 Run real-time recognition by entering the code below.
 ```bash
-
+./darknet detector demo data/obj.data cfg/yolov3-tiny.cfg backup/yolov3-tiny_10000.weights
 ```
 
 You can check the execution through the YouTube link below.
